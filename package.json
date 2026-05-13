@@ -1,6 +1,6 @@
 {
   "name": "neshama-openclaw-soul",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Neshama Soul Plugin for OpenClaw - 基于 OCEAN 人格模型的 AI Agent 灵魂系统",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

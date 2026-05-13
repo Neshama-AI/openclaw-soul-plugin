@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "id": "neshama-soul",
   "name": "Neshama Soul",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "给 AI Agent 注入灵魂，基于 OCEAN 人格模型和 Valence-Arousal 情绪系统",
   "author": "Neshama AI",
   "homepage": "https://neshama.pw",
@@ -10,6 +10,12 @@
   "tags": ["personality", "emotion", "ai", "soul"],
   "license": "MIT",
   "readme": "soul.md",
+  "contracts": {
+    "tools": ["soul_compute"]
+  },
+  "activation": {
+    "onStartup": true
+  },
   "files": [
     "dist/index.js",
     "dist/index.d.ts",
