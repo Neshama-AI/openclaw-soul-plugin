@@ -29,17 +29,5 @@ export interface SoulComputeResponse {
         confidence: number;
     };
 }
-declare const plugin: {
-    id: string;
-    name: string;
-    description: string;
-    register(api: {
-        registerTool: (config: {
-            name: string;
-            description: string;
-            parameters: Record<string, unknown>;
-            execute: (id: string, params: Record<string, unknown>) => Promise<{ content: Array<{ type: string; text: string }> }>;
-        }) => void;
-    }) => void;
-};
-export default plugin;
+export declare const soulCompute: (params: SoulComputeParams) => Promise<SoulComputeResponse>;
+export declare const generatePersonalityPrompt: (response: SoulComputeResponse) => string;

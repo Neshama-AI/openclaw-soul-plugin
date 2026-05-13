@@ -83,13 +83,3 @@ export async function soulCompute(params) {
         throw error;
     }
 }
-export function generatePersonalityPrompt(response) {
-    return `【人格提示词】
-${response.context_for_llm}
-
-【建议语气】
-${response.suggested_tone}
-
-【建议温度】
-${response.suggested_temperature}`;
-}
