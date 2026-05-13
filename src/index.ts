@@ -1,5 +1,14 @@
 import { soulCompute, SoulComputeResponse } from './soul-compute';
 
+export const openclaw = {
+  compat: {
+    pluginApi: '1.0.0',
+  },
+  build: {
+    openclawVersion: '>=1.0.0',
+  },
+};
+
 export interface SoulToolParams {
   message: string;
   ocean?: {
